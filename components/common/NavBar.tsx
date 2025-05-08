@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaUserCircle, FaCog, FaSignOutAlt } from "react-icons/fa";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -41,8 +42,13 @@ const Navbar = () => {
     >
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link href="/calendar-view" className="text-white text-2xl font-bold">
-          Workspace Logo
+        <Link href="/calendar-view">
+          <Image
+            src="/NavBar/workspace.png"
+            alt="Logo"
+            width={80}
+            height={80}
+          />
         </Link>
 
         {/* Navigation Links */}

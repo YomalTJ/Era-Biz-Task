@@ -56,7 +56,7 @@ const CalendarView = () => {
 
   return (
     <div className="bg-gradient-to-b from-gray-700 to-gray-900 min-h-screen p-4">
-      <div className="max-w-7xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         {/* Calendar Controls and Header */}
         <CalendarHeader
           currentMonth={currentMonth}
