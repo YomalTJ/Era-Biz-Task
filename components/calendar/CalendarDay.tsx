@@ -37,10 +37,12 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
     <div className={dayClasses} onClick={onDateClick}>
       <div className="text-lg font-medium text-gray-700">{day}</div>
       {availability && (
-        <div className="absolute bottom-2 left-2 right-2">
-          <div className="bg-blue-100 text-blue-600 text-sm rounded-full px-3 py-1 inline-block">
+        <div className="absolute bottom-2 left-2 right-2 text-center">
+          <div className="hidden sm:inline bg-blue-100 text-blue-600 text-sm rounded-full px-3 py-1">
             {availability} Available
           </div>
+
+          <div className="inline sm:hidden text-blue-600 text-lg">•••</div>
         </div>
       )}
     </div>

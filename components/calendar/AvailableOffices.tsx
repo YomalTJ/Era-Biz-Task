@@ -19,28 +19,28 @@ const AvailableOffices: React.FC<AvailableOfficesProps> = ({
       title: "Package 01",
       description: "Package 01 Description",
       seats: 5,
-      image: "/api/placeholder/300/200",
+      image: "/AvailableOffices/ofz2.jpg",
     },
     {
       id: "02",
       title: "Package 02",
       description: "Package 02 Description",
       seats: 10,
-      image: "/api/placeholder/300/200",
+      image: "/AvailableOffices/ofz3.jpg",
     },
     {
       id: "03",
       title: "Package 03",
       description: "Package 03 Description",
       seats: 15,
-      image: "/api/placeholder/300/200",
+      image: "/AvailableOffices/ofz4.jpg",
     },
   ];
 
   if (!isVisible) return null;
 
   return (
-    <div className="mt-6 mb-8">
+    <div className="mt-6 mb-8 px-0 md:px-10">
       <h2 className="text-2xl font-bold mb-6">
         Available Offices on {selectedDate}:
       </h2>

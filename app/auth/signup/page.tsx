@@ -4,6 +4,7 @@ import FormContainer from "@/components/auth/FormContainer";
 import BlueContainer from "@/components/auth/BlueContainer";
 import FormInput from "@/components/auth/FormInput";
 import Button from "@/components/auth/Button";
+import Link from "next/link";
 
 const Register = () => {
   return (
@@ -39,9 +40,11 @@ const Register = () => {
             placeholder="Re-enter your password"
           />
 
-          <div className="flex justify-center">
-            <Button>Create Account</Button>
-          </div>
+          <Link href="/auth/login">
+            <div className="flex justify-center">
+              <Button>Create Account</Button>
+            </div>
+          </Link>
         </form>
       </FormContainer>
 
