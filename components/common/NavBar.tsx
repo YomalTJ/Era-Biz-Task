@@ -96,7 +96,7 @@ const Navbar = () => {
               {/* Menu Items */}
               <Link
                 href="/settings/profile"
-                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 flex items-center border-b border-gray-100"
+                className="px-4 py-3 text-gray-700 hover:bg-gray-100 flex items-center border-b border-gray-100"
               >
                 <FaCog className="mr-3 text-gray-500" />
                 Settings
@@ -105,7 +105,7 @@ const Navbar = () => {
               <Link href="/auth/login">
                 <button
                   onClick={() => console.log("Logging out...")}
-                  className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-100 flex items-center"
+                  className="w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-100 flex items-center"
                 >
                   <FaSignOutAlt className="mr-3 text-gray-500" />
                   Log out
