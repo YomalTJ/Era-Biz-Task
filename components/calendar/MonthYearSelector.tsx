@@ -34,7 +34,7 @@ const MonthYearSelector: React.FC<MonthYearSelectorProps> = ({
   const years = Array.from({ length: 10 }, (_, i) => 2020 + i);
 
   return (
-    <div className="flex items-center space-x-4 mb-4 md:mb-0">
+    <div className="flex flex-col md:flex-row items-start gap-y-5 md:gap-y-0 md:items-center space-x-4 mb-4 md:mb-0 w-full">
       <div className="flex items-center">
         <span className="text-gray-600 mr-2">Month:</span>
         <select
